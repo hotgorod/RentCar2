@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import makesData from "./makes.json";
+import makesData from "../data/makes.json";
 
 const CarsDropdown = () => {
   const [cars, setCars] = useState([]);

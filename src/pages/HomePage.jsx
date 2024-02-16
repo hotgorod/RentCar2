@@ -1,9 +1,9 @@
-import video from "../assets/video.mp4";
+// import video from "../assets/video.mp4";
 
 const HomePage = () => {
   return (
     <div>
-      <video src={video} autoPlay loop muted />
+      {/* <video src={video} autoPlay loop muted /> */}
       Welcome page!
     </div>
   );

@@ -17,8 +17,10 @@ export const { fetchAdverts } = advertSlice.actions;
 export default advertSlice.reducer;
 
 export function getAdverts() {
-  return async function getAdvertThunk(dispatch, getState) {
-    const data = await fetch("https://653a2c90e3b530c8d9e942e1.mockapi.io/adverts");
+  return async function getAdvertThunk(dispatch) {
+    const data = await fetch(
+      "https://653a2c90e3b530c8d9e942e1.mockapi.io/adverts"
+    );
     const result = data.json();
     dispatch(fetchAdverts(result));
   };

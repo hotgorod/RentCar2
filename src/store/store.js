@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import favouriteSlice from "./favouriteSlice";
+
 import advertSlice from "./advertSlice";
+import favouriteSlice from "./favouriteSlice";
 
 const store = configureStore({
-    reducer: {
+  reducer: {
     favourite: favouriteSlice,
-      adverts: advertSlice,
+    adverts: advertSlice,
   },
 });
 export default store;
