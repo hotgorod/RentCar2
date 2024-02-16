@@ -9,7 +9,7 @@ import Navigation from "./pages/Navigation";
 function App() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/catalog" element={<Catalog />}></Route>
